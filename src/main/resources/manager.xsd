@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.parameta-soap-service.com/parameta/soap/manager"
+	xmlns:tns="http://www.parameta-soap-service.com/parameta/soap/manager"
+	elementFormDefault="qualified">
+
+	<xsd:element name="CustomerRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nombres" type="xsd:string" />
+				<xsd:element name="apellidos" type="xsd:string" />
+				<xsd:element name="tipoDeDocumento" type="xsd:string" />
+				<xsd:element name="numeroDeDocumento" type="xsd:string" />
+				<xsd:element name="fechaDeNacimiento" type="xsd:string" />
+				<xsd:element name="fechaDeVinculacion" type="xsd:string" />
+				<xsd:element name="cargo" type="xsd:string" />
+				<xsd:element name="salario" type="xsd:double" />
+
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Response">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="consumoExitoso" type="xsd:boolean" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
